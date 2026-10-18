@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Portofolio Seminar Pendidikan Profesi Guru</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand" data-page="beranda">
+        <span class="brand-icon">🎓</span>
+        <span class="brand-text">E-Portofolio PPG</span>
+      </a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="navbar-menu" id="navbarMenu">
+        <a href="#" data-page="beranda" class="nav-link active">Beranda</a>
+        <a href="#" data-page="profil" class="nav-link">Profil</a>
+        <a href="#" data-page="refleksi" class="nav-link">Refleksi</a>
+        <a href="#" data-page="karya" class="nav-link">Karya Inovasi</a>
+        <a href="#" data-page="dokumentasi" class="nav-link">Dokumentasi</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== PAGE CONTAINER ===================== -->
+  <main id="page-container">
+
+    <!-- ===================== HALAMAN: BERANDA ===================== -->
+    <section class="page active" id="page-beranda">
+
+      <div class="hero hero-screensaver">
+        <div class="ss-background" id="ssBackground"></div>
+        <div class="ss-overlay"></div>
+        <div class="container hero-centered">
+          <h1>E-PORTOFOLIO SEMINAR PENDIDIKAN PROFESI GURU</h1>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===================== HALAMAN: PROFIL ===================== -->
+    <section class="page" id="page-profil">
+      <div class="page-hero">
+        <div class="container">
+          <h1>Data Diri</h1>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <!-- Profile Card -->
+          <div class="cards-grid" style="grid-template-columns:1fr;">
+            <div class="profile-card fade-in">
+              <div class="profile-card-body">
+                <!-- Foto di kiri -->
+                <div class="profile-photo">
+                  <div class="hero-avatar" id="pfAvatar"></div>
+                </div>
+                <!-- Data diri di kanan -->
+                <div class="profile-rows">
+                  <div class="profile-row">
+                    <span class="profile-row-icon">🧑</span>
+                    <div class="profile-row-text">
+                      <label>Nama Lengkap</label>
+                      <strong id="pfNamaDiri"></strong>
+                    </div>
+                  </div>
+                  <div class="profile-row">
+                    <span class="profile-row-icon">🆔</span>
+                    <div class="profile-row-text">
+                      <label>NIM</label>
+                      <strong id="pfNIM"></strong>
+                    </div>
+                  </div>
+                  <div class="profile-row">
+                    <span class="profile-row-icon">🔧</span>
+                    <div class="profile-row-text">
+                      <label>Bidang Studi</label>
+                      <strong id="pfBidang"></strong>
+                    </div>
+                  </div>
+                  <div class="profile-row">
+                    <span class="profile-row-icon">🎓</span>
+                    <div class="profile-row-text">
+                      <label>LPTK</label>
+                      <strong id="pfLPTK"></strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Riwayat Pendidikan -->
+          <div class="section" style="padding:40px 0 0;">
+            <div class="section-header">
+              <h2 class="section-title">Riwayat Pendidikan</h2>
+            </div>
+            <div class="education-grid" id="riwayatPendidikan"></div>
+          </div>
+
+          <!-- Pengalaman Organisasi -->
+          <div class="section" style="padding:40px 0 0;">
+            <div class="section-header">
+              <h2 class="section-title">Pengalaman Organisasi</h2>
+            </div>
+            <div class="org-grid" id="orgList"></div>
+          </div>
+
+          <!-- Visi & Misi -->
+          <div class="vision-grid" style="margin-top:40px;">
+            <div class="vision-card fade-in">
+              <div class="vision-icon">🌏</div>
+              <h3>Visi Pendidikan di Indonesia</h3>
+              <p id="visiPendidikan"></p>
+            </div>
+            <div class="vision-card fade-in fade-in-delay-1">
+              <div class="vision-icon">👩‍🏫</div>
+              <h3>Visi sebagai Calon Guru</h3>
+              <p id="visiGuru"></p>
+            </div>
+          </div>
+
+          <!-- Misi -->
+          <div class="section" style="padding-top:20px;">
+            <div class="section-header">
+              <h2 class="section-title">Misi</h2>
+            <div class="misi-grid" id="misiList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HALAMAN: REFLEKSI ===================== -->
+    <section class="page" id="page-refleksi">
+      <div class="page-hero">
+        <div class="container">
+          <h1>Refleksi Pembelajaran</h1>
+        </div>
+      </div>
+
+      <div class="section" id="refleksi-s1">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Refleksi Mata Kuliah Semester 1</h2>
+          </div>
+          <div class="cards-grid" id="refleksiS1"></div>
+        </div>
+      </div>
+
+      <div class="section bg-white" id="refleksi-s2">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Refleksi Mata Kuliah Semester 2</h2>
+          </div>
+          <div class="cards-grid" id="refleksiS2"></div>
+        </div>
+      </div>
+
+      <!-- Refleksi Perjalanan -->
+      <div class="section" id="refleksi-perjalanan">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Refleksi Pengalaman Belajar Selama Mengikuti Program PPG</h2>
+          </div>
+
+          <div class="vision-card fade-in" style="margin-bottom:30px;">
+            <h3>Bagaimana seharusnya pendidikan di Indonesia</h3>
+            <p id="perjPengalaman"></p>
+          </div>
+
+          <div class="vision-card fade-in fade-in-delay-1" style="margin-bottom:30px;">
+            <h3>Upaya atau langkah-langkah yang akan dilakukan untuk menjadi seorang guru yang profesional</h3>
+            <p id="perjPerubahan"></p>
+          </div>
+
+          <div class="vision-card fade-in fade-in-delay-2" style="margin-bottom:30px;">
+            <h3>Rencana Tindak Lanjut</h3>
+            <div id="perjRencana"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HALAMAN: KARYA INOVASI ===================== -->
+    <section class="page" id="page-karya">
+      <div class="page-hero">
+        <div class="container">
+          <h1>Karya Inovasi Pendidikan</h1>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="cards-grid" id="karyaGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HALAMAN: DOKUMENTASI ===================== -->
+    <section class="page" id="page-dokumentasi">
+      <div class="page-hero">
+        <div class="container">
+          <h1>Dokumentasi Kegiatan</h1>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="masonry" id="dokumentasiGrid"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== MODAL REFLEKSI ===================== -->
+  <div class="modal-overlay" id="refleksiModal">
+    <div class="modal-content">
+      <button class="modal-close">×</button>
+      <div id="refleksiModalBody"></div>
+    </div>
+  </div>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close">×</button>
+    <img src="" alt="Dokumentasi" id="lightboxImg">
+    <div class="lightbox-caption">
+      <h4 id="lightboxTitle"></h4>
+      <p id="lightboxDesc"></p>
+    </div>
+  </div>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button class="back-top" id="backTop">↑</button>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
